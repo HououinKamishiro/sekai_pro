@@ -61,8 +61,8 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['nene', 'rui', 'emu', 'tsukasa', 'mivsuki', 'honami', 'ichika', 'shiho', 'mikuist', 'anti_mikuist', 'expansionist', 'kyouma'];
-// should this be normalivsed to 100%?
+Q.factions = ['nene', 'rui', 'emu', 'tsukasa', 'mizuki', 'honami', 'ichika', 'shiho', 'mikuist', 'anti_mikuist', 'expansionist', 'kyouma'];
+// should this be normalized to 100%?
 Q.rui_strength = 25;
 Q.rui_dissent = 0;
 Q.nene_strength = 25;
@@ -71,8 +71,8 @@ Q.emu_strength = 25;
 Q.emu_dissent = 0;
 Q.tsukasa_strength = 25;
 Q.tsukasa_dissent = 0;
-Q.mivsuki_strength = 5;
-Q.mivsuki_dissent = 10;
+Q.mizuki_strength = 5;
+Q.mizuki_dissent = 10;
 Q.honami_strength = 0;
 Q.honami_dissent = 0;
 Q.ichika_strength = 0;
@@ -100,7 +100,7 @@ Q.reformists_resigned = 0;
 Q.neorevisionism = 0;
 
 Q.social_patriot = 0;
-Q.mivsuki = 0;
+Q.mizuki = 0;
 Q.honami = 0;
 Q.ichika = 0;
 Q.shiho = 0;
@@ -115,20 +115,20 @@ Q.rural_conscious = 0;
 
 // crisis_urgency indicates how seriously the wxs is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
-// navsi_urgency indicates how seriously the wxs takes the navsis - scale from 0 to 10.
-Q.navsi_urgency = 0;
-// radicalivsation indicates how radical the wxs's rhetoric is - scale from 0 to 10.
-Q.radicalivsation = 0;
+// nazi_urgency indicates how seriously the wxs takes the nazis - scale from 0 to 10.
+Q.nazi_urgency = 0;
+// radicalization indicates how radical the wxs's rhetoric is - scale from 0 to 10.
+Q.radicalization = 0;
 // Support for the WTB plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
 // Support for Pacifism within the wxs relative to 1928
 Q.pacifism = 0;
 // Support for democratic reform within the wxs relative to 1928
-Q.democrativsation = 0;
+Q.democratization = 0;
 // Support for a communist coalition relative to 1928
 Q.communist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
-// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalivsation of industries)
+// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
 Q.economic_plan = 0;
 // have we officially adopted the WTB plan?
 Q.wtb_adopted = 0;
@@ -137,14 +137,14 @@ Q.iron_front_formed = 0;
 // people's party support
 Q.peoples_party_support = 0;
 Q.peoples_party = 0;
-// support for nationalivsations
-Q.nationalivsation_support = 0;
-Q.nationalivsation_adopted = 0;
+// support for nationalizations
+Q.nationalization_support = 0;
+Q.nationalization_adopted = 0;
 // moderate economic plan
 Q.moderate_plan_support = 0;
 Q.moderate_plan_adopted = 0;
 
-// organivsations
+// organizations
 
 // inter-party relations
 Q.ln_relation = 50;
@@ -258,7 +258,7 @@ Q.sekai_fans = 30;
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
-// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BwxsRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/revsession-betrachtung-032009.pdf?__blob=publicationFile
+// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BwxsRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
 Q.inflation = 2.9;
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
@@ -287,60 +287,60 @@ Q.cvp_formed = 0;
 Q.n25d_formed = 0;
 
 // Support for party by social group
-// they don't have to sum to 100 since the electoral calculations will be normalivsed.
+// they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_wxs = 55;
 Q.workers_ln = 22;
 Q.workers_vs = 5;
 Q.workers_mmj = 2;
-Q.workers_n25 = 0;
+Q.workers_n25 = 2;
 Q.workers_vbs = 6;
-Q.workers_ind = 0;
-Q.workers_other = 10;
+Q.workers_ind = 10;
+Q.workers_other = 3;
 
-Q.new_middle_wxs = 8;
-Q.new_middle_ln = 1;
+Q.new_middle_wxs = 15;
+Q.new_middle_ln = 20;
 Q.new_middle_vs = 10;
-Q.new_middle_mmj = 23;
-Q.new_middle_n25 = 22;
+Q.new_middle_mmj = 15;
+Q.new_middle_n25 = 20;
 Q.new_middle_vbs = 10;
-Q.new_middle_ind = 4;
-Q.new_middle_other = 22;
+Q.new_middle_ind = 10;
+Q.new_middle_other = 15;
 
-Q.old_middle_wxs = 4;
-Q.old_middle_ln = 0;
+Q.old_middle_wxs = 5;
+Q.old_middle_ln = 10;
 Q.old_middle_vs = 6;
-Q.old_middle_mmj = 10;
-Q.old_middle_n25 = 27;
+Q.old_middle_mmj = 26;
+Q.old_middle_n25 = 20;
 Q.old_middle_vbs = 24;
 Q.old_middle_ind = 9;
-Q.old_middle_other = 20;
+Q.old_middle_other =15;
 
 Q.rural_wxs = 9;
-Q.rural_ln = 0;
+Q.rural_ln = 2;
 Q.rural_vs = 5;
-Q.rural_mmj = 4;
+Q.rural_mmj = 30;
 Q.rural_n25 = 15;
-Q.rural_vbs = 46;
-Q.rural_ind = 3;
+Q.rural_vbs = 20;
+Q.rural_ind = 40;
 Q.rural_other = 16;
 
-Q.unemployed_wxs = 21;
-Q.unemployed_ln = 50;
-Q.unemployed_vs = 1;
-Q.unemployed_mmj = 0;
-Q.unemployed_n25 = 0;
+Q.unemployed_wxs = 20;
+Q.unemployed_ln = 15;
+Q.unemployed_vs = 5;
+Q.unemployed_mmj = 2;
+Q.unemployed_n25 = 15;
 Q.unemployed_vbs = 4;
 Q.unemployed_ind = 13;
 Q.unemployed_other = 7;
 
-Q.sekai_fans_wxs = 21;
-Q.sekai_fans_ln = 2;
-Q.sekai_fans_vs = 49;
-Q.sekai_fans_mmj = 0;
-Q.sekai_fans_n25 = 5;
-Q.sekai_fans_vbs = 5;
-Q.sekai_fans_ind = 0;
-Q.sekai_fans_other = 16;
+Q.sekai_fans_wxs = 25;
+Q.sekai_fans_ln = 10;
+Q.sekai_fans_vs = 15;
+Q.sekai_fans_mmj = 10;
+Q.sekai_fans_n25 = 25;
+Q.sekai_fans_vbs = 10;
+Q.sekai_fans_ind = 1;
+Q.sekai_fans_other = 1;
 
 Q.workers_wxs_old = 60;
 Q.new_middle_wxs_old = 8;
@@ -367,8 +367,8 @@ Q.bvp_r = 3.9;
 Q.wp_r = 2.4;
 Q.cnblp_r = 1.7;
 Q.true_other_r = 1.8;
-Q.reichstag_sivse = 4.93;
-Q.landtag_sivse = 4.5;
+Q.reichstag_size = 4.93;
+Q.landtag_size = 4.5;
 
 // diff from prev
 Q.old_wxs_r = 26.5;
@@ -478,14 +478,14 @@ Q.lvp_left = 0;
 Q.lvp_right = 0;
 Q.lvp_leader = "Luther";
 Q.lvp_ideology = "Moderate";
-Q.lvp_normalivsed = 0;
+Q.lvp_normalized = 0;
 Q.lvp_votes = 0;
 
 Q.dnef_left = 0;
 Q.dnef_right = 0;
 Q.dnef_leader = "Schleicher";
 Q.dnef_ideology = "Moderate";
-Q.dnef_normalivsed = 0;
+Q.dnef_normalized = 0;
 Q.dnef_votes = 0;
 Q.dnef_r = 0;
 Q.true_dnef_r = 0;
@@ -549,18 +549,18 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
-Q.president_ideology = "Hindenburg";
+Q.president = "";
+Q.president_ideology = "Ruoho";
 // starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
+Q.chancellor = "Himawari";
 Q.chancellor_party = 'vs';
 Q.wxs_in_government = 0;
 Q.wxs_in_government_time = 0;
 Q.wxs_in_government_total_time = 0;
 Q.wxs_in_foreign_time = 0;
 Q.vs_in_government = 1;
-Q.mmj_in_government = 0;
-Q.n25_in_government = 1;
+Q.mmj_in_government = 1;
+Q.n25_in_government = 0;
 Q.vbs_in_government = 1;
 Q.ln_in_government = 0;
 Q.ind_in_government = 0;
@@ -568,11 +568,11 @@ Q.ind_in_government = 0;
 Q.wxs_prussia_time = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = wxs + vs + mmj
-Q.in_weimar_coalition = 0;
-// Grand coalition = wxs + vs + BVP + mmj + n25
+// tenma coalition = wxs + ln
+Q.in_tenma_coalition = 0;
+// tenmamiku coalition = wxs + vs + ln
 // also includes the "new grand coalition" of wxs + vs + BVP + mmj + n25 + Others
-Q.in_grand_coalition = 0;
+Q.in_tenmamiku_coalition = 0;
 // Popular front = wxs + ln + vs + mmj
 Q.in_popular_front = 0;
 // left coalition = wxs + ln + left-splinters
@@ -647,27 +647,27 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Stresemann';
-Q.foreign_minister_party = 'n25';
-Q.interior_minister = 'von Keudell';
+Q.foreign_minister = 'Fukuda';
+Q.foreign_minister_party = 'mmj';
+Q.interior_minister = 'Shinonome';
 Q.interior_minister_party = 'vbs';
-Q.justice_minister = 'Hergt';
+Q.justice_minister = 'Azusawa';
 Q.justice_minister_party = 'vbs';
-Q.labor_minister = 'Brauns';
+Q.labor_minister = 'Yılmaz';
 Q.labor_minister_party = 'vs';
-Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'n25';
-Q.finance_minister = 'Köhler';
+Q.reichswehr_minister = 'Matkovsky';
+Q.reichswehr_minister_party = 'vs';
+Q.economic_minister = 'Kiritani';
+Q.economic_minister_party = 'mmj';
+Q.finance_minister = 'Deisenhofer';
 Q.finance_minister_party = 'vs';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'vbs';
+Q.agriculture_minister = 'Osborne';
+Q.agriculture_minister_party = 'mmj';
 
 // Events: what has occurred?
-Q.panvserkreuvser_seen = 0;
-Q.panvserkreuvser_funded = 0;
-Q.panvserkreuvser_failed = 0;
+Q.panzerkreuzer_seen = 0;
+Q.panzerkreuzer_funded = 0;
+Q.panzerkreuzer_failed = 0;
 Q.unemployment_insurance_seen = 0;
 // unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
 Q.unemployment_insurance_threshold = 10;
@@ -688,7 +688,7 @@ Q.works_program = 0;
 Q.wtb_implemented = 0;
 // Relations with the Western countries (France, UK).
 Q.west_relation = 0;
-// Relations with the Eastern countries (Poland, Cvsechoslovakia)
+// Relations with the Eastern countries (Poland, Czechoslovakia)
 Q.east_relation = 0;
 // Relations with the Soviet Union
 Q.soviet_relation = 0;
@@ -697,11 +697,11 @@ Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
 Q.reparations_negotiation = 0;
-// nationalivsation_progress is part of the left economic plan.
-Q.nationalivsation_progress = 0;
-// socialivsations is part of the economic democracy card.
-Q.socialivsations = 0;
-Q.nationalivse_budget = 4;
+// nationalization_progress is part of the left economic plan.
+Q.nationalization_progress = 0;
+// socializations is part of the economic democracy card.
+Q.socializations = 0;
+Q.nationalize_budget = 4;
 // have there been any factory takeovers?
 Q.factory_takeovers = 0;
 // progress on the moderate economic plan
@@ -731,11 +731,11 @@ Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['advisor_action', 'confronting_navsis', 'crisis_program',
+Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
     'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
-    'party_organivsations', 'rally', 'reichsbanner',
+    'party_organizations', 'rally', 'reichsbanner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
     'party_disunity',
     // govt
@@ -755,13 +755,13 @@ Q.timers = ['advisor_action', 'confronting_navsis', 'crisis_program',
     'dnf_decay', 'march_on_berlin', 'prussian_reichsexekution',
     'bruning_event', 'lvp_merger', 'lvp_merger_1', 'lvp_merger_2', 'bourgeois_merger',
     'bourgeois_negotiations_1930', 'bourgeois_negotiations_1930_aftermath', 'schleichers_schemes',
-    'bourgeois_negotiations_elections_1930', 'navsi_decay', 'stegerwald_transformation', 'emergency_fundraising', 'red_general', 'weimar_rally', 'navsi_funds',
+    'bourgeois_negotiations_elections_1930', 'nazi_decay', 'stegerwald_transformation', 'emergency_fundraising', 'red_general', 'weimar_rally', 'nazi_funds',
     'dsu_policy'];
-Q.rubicon_timers = ['advisor_action', 'confronting_navsis', 'crisis_program',
+Q.rubicon_timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
     'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
-    'party_organivsations', 'rally', 'reichsbanner',
+    'party_organizations', 'rally', 'reichsbanner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
     'party_disunity',
     // govt
@@ -780,11 +780,11 @@ Q.rubicon_timers = ['advisor_action', 'confronting_navsis', 'crisis_program',
     'high_inflation', 'banking_crisis', 'understanding_enemy',
     'dnf_decay', 'march_on_berlin', 'prussian_reichsexekution',
     'bruning_event', 'lvp_merger', 'lvp_merger_1', 'lvp_merger_2', 'bourgeois_merger', 'schleichers_schemes',
-    'bourgeois_negotiations_elections_1930', 'emergency_fundraising', 'red_general', 'weimar_rally', 'navsi_funds',
+    'bourgeois_negotiations_elections_1930', 'emergency_fundraising', 'red_general', 'weimar_rally', 'nazi_funds',
     'campaigning', 'dsu_policy'];
 Q.advisor_action_timer = 0;
 // party affairs timers
-Q.confronting_navsis_timer = 0;
+Q.confronting_nazis_timer = 0;
 Q.crisis_program_timer = 0;
 Q.fundraising_timer = 0;
 Q.ideology_timer = 0;
@@ -793,7 +793,7 @@ Q.international_relations_timer = 0;
 Q.iron_front_timer = 0;
 Q.media_timer = 0;
 Q.enemies_timer = 0;
-Q.party_organivsations_timer = 0;
+Q.party_organizations_timer = 0;
 Q.rally_timer = 0;
 Q.reichsbanner_timer = 0;
 Q.shuffle_leadership_timer = 0;
@@ -815,9 +815,9 @@ Q.prussian_reichsexekution_timer = 0;
 Q.in_election = 1;
 Q.in_election_prussia = 1;
 Q.next_election_time_prussia = 5;
-Q.next_election_year_prussia = 1928;
+Q.next_election_year_prussia = 2030;
 Q.next_election_month_prussia = 5;
-Q.next_election_year = 1928;
+Q.next_election_year = 2030;
 Q.next_election_month = 12;
 Q.next_election_time = 12;
 // government affairs timers
@@ -859,7 +859,7 @@ Q.bourgeois_merger_timer = 0;
 Q.high_inflation_timer = 0;
 Q.papen_chancellor_timer = 0;
 Q.schleicher_chancellor_timer = 0;
-Q.navsi_decay_timer = 0;
+Q.nazi_decay_timer = 0;
 Q.red_general_timer = 0;
 Q.weimar_rally_timer = 0;
 Q.editorial_line = "Center";
@@ -870,7 +870,7 @@ Q.dstp_formed = 0;
 Q.mmj_left = 0;
 Q.mmj_right = 0;
 Q.mmj_name = "mmj";
-Q.mmj_full_name = "German Democratic Party";
+Q.mmj_full_name = "More More Jump";
 Q.mmj_leader = "Koch-Weser";
 Q.mmj_ideology = "Moderate"
 Q.mmj_cohesion = 15;
@@ -883,7 +883,7 @@ Q.was_in_right_coalition = 0;
 Q.n25_left = 0;
 Q.n25_right = 0;
 Q.n25_was_in_prussia = 0;
-Q.n25_leader = "Stresemann";
+Q.n25_leader = "Yoisaki";
 Q.n25_ideology = "Moderate"
 Q.liberal_cooperation = 0;
 Q.liberal_parliament = 0;
@@ -895,11 +895,11 @@ Q.liberal_parliament_seen = 0;
 Q.n25_reform = 0;
 Q.bourgeois_cooperation = 0;
 Q.ui1_compromise = 0;
-Q.panvserkreuser_right_seen = 0;
+Q.panzerkreuser_right_seen = 0;
 Q.black_thursday_seen = 0;
 Q.grand_coalition_collapsed = 0;
 Q.true_christian_democracy = 0;
-Q.vsentrum_disintegration = 0;
+Q.zentrum_disintegration = 0;
 Q.wtb_rally = 0;
 Q.braun_resign = 0;
 Q.secret_mode = 0;
@@ -941,7 +941,7 @@ Q.vs_in_gov_time = 0;
 Q.dsu_in_gov_time = 0;
 Q.rubicon_time = 0; 
 Q.reichstag_rubicon = 0;
-Q.navsi_peak = 25;
+Q.nazi_peak = 25;
 Q.vbs_westarp = 1;
 Q.mmj_factionless_time = 0;
 Q.wp_conflict_time = 0;
@@ -965,10 +965,10 @@ Q.public_works_name = "Lautenbach";
 Q.hitler_right_coalition_time = 0;
 Q.papen_post = 0;
 Q.papen_post_2 = 0;
-Q.navsi_funds = 5;
+Q.nazi_funds = 5;
 Q.wxs_lippe = 1;
 Q.ind_lippe = 1;
-Q.navsi_explode = 0;
+Q.nazi_explode = 0;
 Q.schleicher_explode = 0;
 Q.schleicher_victory = 0;
 Q.old_prussia_leader = " ";
@@ -998,7 +998,7 @@ Q.schleicher_fight = 0;
 Q.last_election_time = 0;
 Q.marxist_malus_time = 0;
 Q.dynamic_token = 0;
-Q.schwarvse_null = 1;
+Q.schwarze_null = 1;
 Q.notwendigkeit = 1;
 Q.gov_burden_fail = 0;
 Q.prussia_force_timer = 0;
@@ -1023,7 +1023,7 @@ Q.papen_strength = 1;
 Q.meissner_strength = 2;
 Q.oskar_strength = 2;
 
-Q.papen_goal = "Navsi backing for his cabinet";
+Q.papen_goal = "nazi backing for his cabinet";
 Q.schleicher_goal = "Control Papen from the sidelines";
 Q.meissner_goal = "Become acquainted with the new chancellor";
 Q.oskar_goal = "Support the new chancellor";
@@ -1057,7 +1057,7 @@ Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitvs_advisor = 0; // Max Seydewitvs
+Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
@@ -1066,8 +1066,8 @@ Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
-Q.juchacvs_advisor = 0; // Marie Juchacvs
-Q.baade_advisor = 0; // Fritvs Baade
+Q.juchacz_advisor = 0; // Marie Juchacz
+Q.baade_advisor = 0; // Fritz Baade
 
 // Labor advisors
 Q.leipart_advisor = 0; // Theodor Leipart
@@ -1101,7 +1101,7 @@ const achievements = [
   "achievement_einigkeit_und_recht_und_freiheit",
   "achievement_victory_for_the_republic",
   "achievement_bollwerk_der_demokratie",
-  "achievement_red_tvsar_of_prussia",
+  "achievement_red_tzar_of_prussia",
   "achievement_einheitsfront",
   "achievement_einheitsfront_2",
   "achievement_volksfront",
@@ -1123,7 +1123,7 @@ const achievements = [
   "achievement_hirschfeld",
   "achievement_women_reichsbanner",
   "achievement_anders_als_die_andern",
-  "achievement_bruder_vsur_sonne",
+  "achievement_bruder_zur_sonne",
   "achievement_die_rote_fahne",
   "achievement_panik_im_mittelstand",
   "achievement_bauernrevolution",
@@ -1138,7 +1138,7 @@ const achievements = [
   "achievement_eu",
   "achievement_heidelberger_programm",
   "achievement_verfassungsreform",
-  "achievement_vseppelin_kapitan",
+  "achievement_zeppelin_kapitan",
   "achievement_wahlrechts",
   "achievement_bundesrepublik",
   "achievement_republik_der_wissenschaft",
@@ -1159,14 +1159,14 @@ const achievements = [
   "achievement_ldp",
   "achievement_der_grosse_neustart",
   "achievement_deutsche_tory_demokratie",
-  "achievement_schwarvse_null",
+  "achievement_schwarze_null",
   "achievement_historischer_kompromiss",
   "achievement_frahm_und_brandt",
   "achievement_neue_arbeiterpartei",
   "achievement_ankurbelung",
   "achievement_linksliberale_renaissance",
   "achievement_ein_interessantes_experiment",
-  "achievement_das_grosste_aller_vselte",
+  "achievement_das_grosste_aller_zelte",
   "achievement_getrennt_marschieren_vereint_schlagen",
   "achievement_nach_schleicher_wir",
   "achievement_sozialdemokratische_blockpartei",
@@ -1180,7 +1180,7 @@ const achievements = [
   "achievement_ampelkoalition",
   "achievement_staatspolitiker",
   "achievement_soziale_politik_fur_dich",
-  "achievement_polivseistaat",
+  "achievement_polizeistaat",
   "achievement_wahre_bundesrepublik",
   "achievement_der_beliebte_prasident",
   "achievement_notwendigkeit",
@@ -1218,7 +1218,7 @@ const achievements = [
   "achievement_alt_aber_gold",
   "achievement_kleber_der_partei",
   "achievement_grosse_sauberung",
-  "achievement_die_rote_justivs",
+  "achievement_die_rote_justiz",
   "achievement_bruning_der_rotfrontkampfer",
   "achievement_mervs_und_scholvs",
   "achievement_lindner_moribund",
@@ -1246,13 +1246,13 @@ if (Q.percentComplete >= 100) {
 set-bg: img/map_2.jpg
 new-page: true
 
-> *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as reflecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
+> *"Against all people, one can last, but not continue"*
 
  - Karl Kautsky, *Hitlerism and Social Democracy*, 1934
 
-This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
+This is a game of make-believe. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+For more information on the politics and government of the Union of Sekai States see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 **If you are playing this mod via the Mod Loader in base game, there will be various items missing (parliament colours, images, arrows, etc.). For the intended experience, please play using <a href="https://originn0.github.io/dynamic_social_democracy/" style="color: #0077FF">this</a> link.**
 
@@ -1264,11 +1264,11 @@ For more information on the politics and government of the German Republic, see 
 - @1928_challenge: Custom Modes
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; rb_strength = 2500; ln_relation = 29; vs_relation = 54; n25_relation = 49; mmj_relation = 65; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; ws_strength = 2500; ln_relation = 29; vs_relation = 54; n25_relation = 49; mmj_relation = 65; budget = 5;
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; vs_relation = 41; ln_relation = 16; n25_relation = 31; mmj_relation = 50; budget = 3
+on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; ws_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; vs_relation = 41; ln_relation = 16; n25_relation = 31; mmj_relation = 50; budget = 3
 go-to: 1928_main
 
 @1928_historical
@@ -1279,7 +1279,7 @@ Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 2;
 Q.base_dues = 2;
-Q.rb_strength = 2000;
+Q.ws_strength = 2000;
 Q.reformist_dissent = 25;
 Q.left_dissent = 30;
 Q.labor_dissent = 25;
@@ -1301,7 +1301,7 @@ Q.dynamic_mode = 1;
 Q.resources = 3;
 Q.dues = 3;
 Q.base_dues = 3;
-Q.rb_strength = 2000;
+Q.ws_strength = 2000;
 Q.vs_relation = 41;
 Q.ln_relation = 21;
 Q.n25_relation = 31;
@@ -1317,7 +1317,7 @@ Q.difficulty = -1;
 Q.resources = 3;
 Q.dues = 3;
 Q.base_dues = 3;
-Q.rb_strength = 2000;
+Q.ws_strength = 2000;
 Q.vs_relation = 41;
 Q.ln_relation = 21;
 Q.n25_relation = 31;
@@ -1357,7 +1357,7 @@ for (var c of Q.classes) {
         class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalivsed'] = 100*Q[c+'_'+party]/class_votes;
+        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
         Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
     }
 }
@@ -1370,15 +1370,15 @@ for (var party of Q.parties) {
         if (Q.old_demographics) { 
             party_support += Q[c]*Q[c+'_'+party];
         } else  { 
-            party_support += Q[c]*Q[c+'_'+party+'_normalivsed'];
+            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
         } 
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_support = Q.rural_ind_normalivsed*Q.rural;
-        Q.ind_hitler_support += Q.old_middle_ind_normalivsed*Q.old_middle;
-        Q.ind_hitler_support += Q.sekai_fans_ind_normalivsed*Q.sekai_fans;
+        Q.ind_hitler_support = Q.rural_ind_normalized*Q.rural;
+        Q.ind_hitler_support += Q.old_middle_ind_normalized*Q.old_middle;
+        Q.ind_hitler_support += Q.sekai_fans_ind_normalized*Q.sekai_fans;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
             Q.dsu_support = Q.workers_ind*Q.workers*((120 - Q.sa_force) / 100);
@@ -1403,16 +1403,16 @@ for (var party of Q.parties) {
     }
 }
 for (var party of Q.parties) {
-    Q[party+'_normalivsed'] = Q[party + '_support']/total_support;
+    Q[party+'_normalized'] = Q[party + '_support']/total_support;
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_normalivsed = Q.ind_hitler_support / total_support;
-        Q.dsu_normalivsed = Q.dsu_support / total_support;
-        Q.nvf_normalivsed = Q.nvf_support / total_support;
-        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalivsed*1000) / 10;
-        Q.dsu_votes = Math.round(Q.dsu_normalivsed*1000) / 10;
-        Q.nvf_votes = Math.round(Q.nvf_normalivsed*1000) / 10;
+        Q.ind_hitler_normalized = Q.ind_hitler_support / total_support;
+        Q.dsu_normalized = Q.dsu_support / total_support;
+        Q.nvf_normalized = Q.nvf_support / total_support;
+        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalized*1000) / 10;
+        Q.dsu_votes = Math.round(Q.dsu_normalized*1000) / 10;
+        Q.nvf_votes = Math.round(Q.nvf_normalized*1000) / 10;
     }
-    Q[party+'_votes'] = Math.round(Q[party+'_normalivsed']*1000)/ 10;
+    Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/ 10;
 }
 !}
 go-to: 1928_mod_mode_lite
@@ -1439,7 +1439,7 @@ for (var c of Q.classes) {
         class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalivsed'] = 100*Q[c+'_'+party]/class_votes;
+        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
         Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
     }
 }
@@ -1452,15 +1452,15 @@ for (var party of Q.parties) {
         if (Q.old_demographics) { 
             party_support += Q[c]*Q[c+'_'+party];
         } else  { 
-            party_support += Q[c]*Q[c+'_'+party+'_normalivsed'];
+            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
         } 
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_support = Q.rural_ind_normalivsed*Q.rural;
-        Q.ind_hitler_support += Q.old_middle_ind_normalivsed*Q.old_middle;
-        Q.ind_hitler_support += Q.sekai_fans_ind_normalivsed*Q.sekai_fans;
+        Q.ind_hitler_support = Q.rural_ind_normalized*Q.rural;
+        Q.ind_hitler_support += Q.old_middle_ind_normalized*Q.old_middle;
+        Q.ind_hitler_support += Q.sekai_fans_ind_normalized*Q.sekai_fans;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
             Q.dsu_support = Q.workers_ind*Q.workers*((120 - Q.sa_force) / 100);
@@ -1485,16 +1485,16 @@ for (var party of Q.parties) {
     }
 }
 for (var party of Q.parties) {
-    Q[party+'_normalivsed'] = Q[party + '_support']/total_support;
+    Q[party+'_normalized'] = Q[party + '_support']/total_support;
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_normalivsed = Q.ind_hitler_support / total_support;
-        Q.dsu_normalivsed = Q.dsu_support / total_support;
-        Q.nvf_normalivsed = Q.nvf_support / total_support;
-        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalivsed*1000) / 10;
-        Q.dsu_votes = Math.round(Q.dsu_normalivsed*1000) / 10;
-        Q.nvf_votes = Math.round(Q.nvf_normalivsed*1000) / 10;
+        Q.ind_hitler_normalized = Q.ind_hitler_support / total_support;
+        Q.dsu_normalized = Q.dsu_support / total_support;
+        Q.nvf_normalized = Q.nvf_support / total_support;
+        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalized*1000) / 10;
+        Q.dsu_votes = Math.round(Q.dsu_normalized*1000) / 10;
+        Q.nvf_votes = Math.round(Q.nvf_normalized*1000) / 10;
     }
-    Q[party+'_votes'] = Math.round(Q[party+'_normalivsed']*1000)/ 10;
+    Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/ 10;
 }
 !}
 go-to: 1928_mod_mode_lite
@@ -1516,7 +1516,7 @@ for (var c of Q.classes) {
         class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalivsed'] = 100*Q[c+'_'+party]/class_votes;
+        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
         Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
     }
 }
@@ -1529,15 +1529,15 @@ for (var party of Q.parties) {
         if (Q.old_demographics) { 
             party_support += Q[c]*Q[c+'_'+party];
         } else  { 
-            party_support += Q[c]*Q[c+'_'+party+'_normalivsed'];
+            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
         } 
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_support = Q.rural_ind_normalivsed*Q.rural;
-        Q.ind_hitler_support += Q.old_middle_ind_normalivsed*Q.old_middle;
-        Q.ind_hitler_support += Q.sekai_fans_ind_normalivsed*Q.sekai_fans;
+        Q.ind_hitler_support = Q.rural_ind_normalized*Q.rural;
+        Q.ind_hitler_support += Q.old_middle_ind_normalized*Q.old_middle;
+        Q.ind_hitler_support += Q.sekai_fans_ind_normalized*Q.sekai_fans;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
             Q.dsu_support = Q.workers_ind*Q.workers*((120 - Q.sa_force) / 100);
@@ -1562,16 +1562,16 @@ for (var party of Q.parties) {
     }
 }
 for (var party of Q.parties) {
-    Q[party+'_normalivsed'] = Q[party + '_support']/total_support;
+    Q[party+'_normalized'] = Q[party + '_support']/total_support;
     if (party == "ind" && Q.ind_split) {
-        Q.ind_hitler_normalivsed = Q.ind_hitler_support / total_support;
-        Q.dsu_normalivsed = Q.dsu_support / total_support;
-        Q.nvf_normalivsed = Q.nvf_support / total_support;
-        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalivsed*1000) / 10;
-        Q.dsu_votes = Math.round(Q.dsu_normalivsed*1000) / 10;
-        Q.nvf_votes = Math.round(Q.nvf_normalivsed*1000) / 10;
+        Q.ind_hitler_normalized = Q.ind_hitler_support / total_support;
+        Q.dsu_normalized = Q.dsu_support / total_support;
+        Q.nvf_normalized = Q.nvf_support / total_support;
+        Q.ind_hitler_votes = Math.round(Q.ind_hitler_normalized*1000) / 10;
+        Q.dsu_votes = Math.round(Q.dsu_normalized*1000) / 10;
+        Q.nvf_votes = Math.round(Q.nvf_normalized*1000) / 10;
     }
-    Q[party+'_votes'] = Math.round(Q[party+'_normalivsed']*1000)/ 10;
+    Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/ 10;
 }
 !}
 go-to: 1928_mod_mode_lite
@@ -1588,7 +1588,7 @@ go-to: 1928_mod_mode_lite
 
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalivsed.mp3 music/1928_1933/vsurSonne_vsurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalivsed.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/sozialistenMarsch.mp3
+audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/vsurSonne_vsurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/sozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
