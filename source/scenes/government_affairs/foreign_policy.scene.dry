@@ -46,7 +46,7 @@ on-arrival: east_relation += 2;
 
 We also aim to improve relations with our eastern neighbors, <span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span>, who are rightfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
 
-@improve_east
+@improve_japan
 title: Improve our relations with Japan.
 on-arrival: japan_relation += 2;
 
