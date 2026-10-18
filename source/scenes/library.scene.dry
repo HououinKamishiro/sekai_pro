@@ -77,25 +77,25 @@ Reichstag composition:
 # 1928: 30, 1930: 25, 1932: 22
 
 [? if dnef_formed: <span class="tooltip-text" title="German National Unity Front" style="color: #BFC8CC;">**DNEF**</span>: [+ dnef_r +]% ?]
-<span class="tooltip-text" title="Social Democratic Party of Germany" style="color: #ff9900;">**WxS**</span>: [+ wxs_r +]%
+<span class="tooltip-text" title="Wonderlands x Showtime" style="color: #ff9900;">**WxS**</span>: [+ wxs_r +]%
 [? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Socialist Workers' Party of Germany" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 [? if z_party_name != "CVP": <span class="tooltip-text" title="Center Party + Bavarian People's Party"><span style="color: #000000;">**[+ z_party_name +]**</span> + <span style="color: #A2D8E0;">**BVP**</span></span>?][? if z_party_name == "CVP": <span class="tooltip-text" title="Christian People's Party + Bavarian People's Party"><span style="color: #000000;">**[+ z_party_name +]**</span> + <span style="color: #A2D8E0;">**BVP**</span></span>?]: [+ z_r +]%
 # 1928: 10, 1930: 13
-<span class="tooltip-text" title="Communist Party of Germany" style="color: #4455dd;">**LN**</span>: [+ ln_r +]%
+<span class="tooltip-text" title="Leo/Need" style="color: #4455dd;">**LN**</span>: [+ ln_r +]% ?]
 # 1928: 5, 1930: 4 (as DStP)
 [? if lvp_formed: <span class="tooltip-text" title="Liberal People's Party" style="color: #FFCC00;">**LVP**</span>: [+ lvp_r +]% ?]
 [? if (not lvp_formed or not vs) : [? if not vs:<span class="tooltip-text" title="German Democratic Party" style="color: #67c9ba;">**DDP**</span>?][? if vs = "DDP":<span class="tooltip-text" title="German Democratic Party" style="color: #67c9ba;">**[+ vs +]**</span>?][? if vs = "DStP":<span class="tooltip-text" title="German State Party" style="color: #67c9ba;">**[+ vs +]**</span>?]: [+ vs_r +]% ?]
 # 1928: 9, 1930: 5
-[? if not lvp_formed and dvp_exist : <span class="tooltip-text" title="German People's Party" style="color: #ee1166;">**VBS**</span>: [+ dvp_r +]% ?]
+[? if not lvp_formed and dvp_exist : <span class="tooltip-text" title="Vivid Bad Squad" style="color: #ee1166;">**VBS**</span>: [+ dvp_r +]% ?]
 [? if kvp_formed and not n25_dvp_formed : <span class="tooltip-text" title="Conservative People's Party" style="color: #0087DC;">**KVP**</span>: [+ kvp_r +]% ?]
 [? if n25_dvp_formed: <span class="tooltip-text" title="Free Conserative Party" style="color: #00C0FF;">**FKP**</span>: [+ kvp_r +]% ?]
 # 1928: 14, 1930: 7
-[? if not cvp_formed and not n25_defunct: <span class="tooltip-text" title="German National People's Party" style="color: #3E88B3;">**N25**</span>: [+ n25_r +]%?]
+[? if not cvp_formed and not n25_defunct: <span class="tooltip-text" title="Nightcord at 25" style="color: #3E88B3;">**N25**</span>: [+ n25_r +]%?]
 [? if dnf_formed: <span class="tooltip-text" title="German National Front" style="color: #003755;">**DNF**</span>: [+ dnf_r +]% ?]
 # 1928: 3, 1930: 18
 [? if dsu_exist: <span class="tooltip-text" title="German Social Union" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
-[? if not mmj_split: <span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)" style="color: #7A3C00;">**MMJ**</span>: [+ mmj_r +]%?]
+[? if not mmj_split: <span class="tooltip-text" title="More More Jump" style="color: #7A3C00;">**MMJ**</span>: [+ mmj_r +]%?]
 [? if mmj_split: <span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)" style="color: #7A3C00;">**MMJ**</span>: [+ mmj_hitler_r +]%?]
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: [+ nvf_r +]%?]
 # 1928: 9, 1930: 10
