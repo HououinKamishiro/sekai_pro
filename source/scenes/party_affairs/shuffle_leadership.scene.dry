@@ -17,7 +17,7 @@ go-to: rm_main
 
 @rm_main
 title: Remove advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor 
+tags: rui_advisor, nene_advisor, tsukasa_advisor, emu_advisor, neorev_advisor, nonfactional_advisor 
 on-arrival: {!
 Q.last_time_check = Q.time;
 if (Q.time > Q.last_time_check) {
@@ -80,6 +80,42 @@ if (arraysAreEqual(Q.advisor_1, Q.advisor_2)) {
 !}
 go-to: root
 tags: remove_advisor
+
+@remove_rui
+title: Remove Kamishiro
+view-if: rui_advisor = 1
+on-arrival: rui_advisor = 0; rui_dissent += 10; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main_menu
+
+Kamishiro has been removed as an advisor. The Rui faction disapproves.
+
+@remove_nene
+title: Remove Kusanagi
+view-if: nene_advisor = 1
+on-arrival: nene_advisor = 0; nene_dissent += 10; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main_menu
+
+Kusanagi has been removed as an advisor. The Nene faction disapproves.
+
+@remove_tsukasa
+title: Remove Tenma T.
+view-if: tsukasa_advisor = 1
+on-arrival: tsukasa_advisor = 0; tsukasa_dissent += 10; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main_menu
+
+Tenma T. has been removed as an advisor. The Tsukasa faction disapproves.
+
+@remove_emu
+title: Remove Otori E.
+view-if: emu_advisor = 1
+on-arrival: emu_advisor = 0; emu_dissent += 10; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main_menu
+
+Otori E has been removed as an advisor. The Emu faction disapproves.
 
 
 @remove_hilferding
@@ -344,39 +380,39 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+tags: tsukasa_advisor, rui_advisor, nene_advisor, emu_advisor, neorev_advisor, nonfactional_advisor
 frequency: 1
 
 
-- @centrist: Add Centrists
-- @left: Add Leftists
-- @reformist: Add Reformists
-- @labor: Add Labor
+- @tsukasa: Add Tsukasaists
+- @rui : Add Ruiists
+- @nene: Add Neneists
+- @emu: Add Emuists
 - @neorev: Add Neorevisionists
 - @nonfactional: Add non-factional advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
-@centrist
+@tsukasa
 subtitle: The glue holding the party together. Reduces faction loyalty decay by 30% for each advisor appointed.
 view-if: n_advisors < 3
 
-- #center_advisor
+- #tsukasa_advisor
 
-@reformist
+@rui
 view-if: n_advisors < 3
 
-- #reformist_advisor
+- #rui_advisor
 
-@left
+@nene
 view-if: n_advisors < 3
 
-- #left_advisor
+- #nene_advisor
 
-@labor
+@emu
 view-if: n_advisors < 3
 
-- #labor_advisor
+- #emu_advisor
 
 @neorev
 view-if: neorevisionism > 0 and n_advisors < 3
@@ -400,6 +436,57 @@ on-arrival: hilferding_advisor = 1; n_advisors += 1; center_dissent -= 7; center
 go-to: advisor_menu
 
 Rudolf Hilferding is now an advisor.
+
+@add_tsukasa
+title: Tsukasa Tenma
+subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+is-card: true
+card-image: img/portraits/TenmaT.jpg
+tags: tsukasa_advisor
+view-if: tsukasa_advisor = 0 and n_advisors < 3 and tsukasa_resign = 0
+on-arrival: tsukasa_advisor = 1; n_advisors += 1; tsukasa_dissent -= 7; tsukasa_strength += 5
+go-to: advisor_menu
+
+Tsukasa Tenma is now an advisor.
+
+
+@add_rui
+title: Rui Kamishiro
+subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+is-card: true
+card-image: img/portraits/KamishiroR.jpg
+tags: rui_advisor
+view-if: rui_advisor = 0 and n_advisors < 3 and rui_resign = 0
+on-arrival: rui_advisor = 1; n_advisors += 1; rui_dissent -= 7; rui_strength += 5
+go-to: advisor_menu
+
+Kamishiro Rui is now an advisor.
+
+
+@add_nene
+title: Nene Kusanagi
+subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+is-card: true
+card-image: img/portraits/KusanagiN.jpg
+tags: nene_advisor
+view-if: nene_advisor = 0 and n_advisors < 3 and nene_resign = 0
+on-arrival: nene_advisor = 1; n_advisors += 1; nene_dissent -= 7; nene_strength += 5
+go-to: advisor_menu
+
+Kusanagi Nene is now an advisor.
+
+
+@add_emu
+title: Emu Otori
+subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+is-card: true
+card-image: img/portraits/OtoriE.jpg
+tags: emu_advisor
+view-if: emu_advisor = 0 and n_advisors < 3 and emu_resign = 0
+on-arrival: emu_advisor = 1; n_advisors += 1; emu_dissent -= 7; emu_strength += 5
+go-to: advisor_menu
+
+Otori Emu is now an advisor.
 
 @add_wels
 title: Otto Wels
