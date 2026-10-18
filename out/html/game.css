@@ -699,38 +699,38 @@ th {
   fill: #700000;
 }
 
-.seat.spd {
-  fill: #E3000F;
+.seat.wxs {
+  fill: #ff9900;
   stroke: var(--border-color);
   stroke-width: 1.5px;
 }
 
-.seat.ddp {
-  fill: #D3C24D;
+.seat.ln {
+  fill: #4455dd;
 }
 
 .seat.z {
   fill: #000;
 }
 
-.seat.bvp {
+.seat.ind {
   fill: #A2D8E0;
 }
 
-.seat.dvp {
-  fill: #D5AC27;
+.seat.vbs {
+  fill: #ee1166;
 }
 
 .seat.other {
   fill: #909090;
 }
 
-.seat.dnvp {
-  fill: #3E88B3;
+.seat.n25 {
+  fill: #884499;
 }
 
-.seat.nsdap {
-  fill: #7A3C00;
+.seat.mmj {
+  fill: #6ccb20;
 }
 
 .seat.dsu {
@@ -753,8 +753,8 @@ th {
   fill: #0087DC;
 }
 
-.seat.lvp {
-  fill: #FFCC00;
+.seat.vs {
+  fill: #86cecb;
 }
 
 .seat.dnef {
@@ -810,7 +810,7 @@ th {
   fill: #0075EB;
 }
 
-.seat.aspd {
+.seat.awxs {
   fill: #fe9e00;
 }
 
